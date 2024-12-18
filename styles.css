@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+}
+
+.container-calculadora {
+    background-color: rgb(173, 173, 173);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora {
+    background-color: #000000;
+    height: 600px;
+    width: 500px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.container-buttons-calculadora {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-boton{
+    width: 20px;
+}
+
+.buttons-calculadora {
+    display: grid;
+    width: 90%;
+    height: 60%;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5%;
+    gap: 20px;
+}
+
+button {
+    background-color: #445050;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.miBoton:hover {
+    background-color: #7f8c8f;
+    transition: all .3s ease-in-out;
+}
+
+input {
+    text-align: center;
+    font-size: 30px;
+}
+
+#button-color-diferent{
+    background-color: #3e4659;
+}
+
+.resultado-container {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.resultado {
+    width: 90%;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-add {
+    grid-row: 4 / 6;
+    grid-column: 4 / 5;
+}

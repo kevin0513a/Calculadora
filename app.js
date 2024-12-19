@@ -37,7 +37,17 @@ botones.forEach((boton) => {
                 currentValue = currentValue.slice(0, -1); // Elimina el último carácter
                 mostrarPantalla.value = currentValue;
             }
-        } else {
+        }else if (value === ".") {
+            if (!currentValue.includes(".")) {
+                currentValue += "."; // Agrega el punto decimal
+                mostrarPantalla.value = currentValue; // Actualiza el display
+            }
+        }else if (value === "%") {
+            if (currentValue) {
+                currentValue = (parseFloat(currentValue)/100).toString();
+                mostrarPantalla.value = currentValue; // Actualiza el display
+            }
+        }  else {
             // Concatena los números
             currentValue += value;
             mostrarPantalla.value = currentValue;
